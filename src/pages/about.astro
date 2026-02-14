@@ -1,5 +1,7 @@
 ---
 import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
+
 import "../styles/global.css";
 
 const pageTitle = "Sobre Mí";
@@ -91,5 +93,9 @@ const textCase = "uppercase";
     {happy && <p>¡Estoy feliz de aprender Astro!</p>}
     {finished && <p>¡He terminado el tutorial!</p>}
     {goal === 3 && <p>¡He completado 3 tutoriales!</p>}
+
+    <!-- footer start -->
+    <Footer />
+    <!-- footer end -->
   </body>
 </html>
